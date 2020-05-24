@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link href="./css/styles.css" rel="stylesheet" />
+    <title>BalckJack</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <h2 id="change-my-color">BlackJack</h2>
+      <h3> <span id="backjack-result">Vamos Jogar !</span></h3>
+      <div class="flex-box-blackjack-row-1">
+        <div id="your-box">
+            <h2> Você: <span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+            <h2>Oponente: <span id="dealer-blackjack-result">0</span></h2> 
+        </div>
+      </div>
+      <div class="flex-box-blackjack-row-2">
+          <div>
+              <button class="btn-lg mr-2 btn-primary" id="blackjack-hit-btn">Hit</button>
+              <button class="btn-lg  btn-warning" id="blackjack-stand-btn" onclick="blackJackStand(this)">Stand</button>
+              <button class="btn-lg btn-danger ml-2" id="blackjack-deal-btn">Deal</button>
+          </div>
+      </div>
+      <div class="flex-box-blackjack-row-3">
+          <table>
+              <tr>
+                  <th>Wins</th>
+                  <th>Losses</th>
+                  <th>Draws</th>
+              </tr>
+              <tr>
+                  <td><span id="wins">0</span></td>
+                  <td> <span id="losses">0</span></td>
+                  <td> <span id="draws">0</span></td> 
+              </tr>
+          </table>
+      </div>
+    </div>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
